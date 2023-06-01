@@ -1,0 +1,7 @@
+@import url("./base/_reset.scss"); /*  font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+}
