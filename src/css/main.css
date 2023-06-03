@@ -1,7 +1,194 @@
-@import url("./base/_reset.scss"); /*  font-family: 'Playfair Display', serif;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 16px; /* по умолчанию */
+}
+
+body {
+  line-height: 1;
+}
+
+/*  font-family: 'Playfair Display', serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
 body {
   font-family: "Raleway", sans-serif;
+  background-color: #242b33;
+}
+
+a {
+  color: #FFFFFF;
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+a:hover {
+  color: #D4C17F;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.header {
+  min-height: 840px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242b33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242b33)), url("./../img/header/Rectangle.jpg");
+  background: -o-linear-gradient(top, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./../img/header/Rectangle.jpg");
+  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("./../img/header/Rectangle.jpg");
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 74px;
+}
+.header__top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__top-row__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.list-item {
+  font-size: 14px;
+}
+
+.header-title {
+  text-align: center;
+  color: #D4C17F;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Playfair Display", sans-serif;
+  line-height: 63.98px;
+  position: relative;
+  padding-bottom: 121px;
+}
+
+.header-title__icon {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+.info {
+  position: relative;
+  font-size: 18px;
+  padding-left: 35px;
+}
+
+.info--map::before,
+.info--tel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+}
+
+.info--map::before {
+  background-image: url("./../img/header/map.svg");
+}
+
+.info--tel::before {
+  background-image: url("./../img/header/Phone.svg");
+}
+
+.header__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }

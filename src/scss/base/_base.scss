@@ -4,4 +4,20 @@
 
 body{
     font-family: $font-main;
+    background-color: $dark;
+}
+a{
+    color: $white;
+    transition: color 0.3s ease-in;
+    &:hover{
+        color: $accent;
+    }
+}
+.container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.text-right{
+    text-align: right;
 }
