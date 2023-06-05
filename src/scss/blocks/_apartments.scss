@@ -1,0 +1,26 @@
+.apartments {
+}
+.container {
+}
+.apartaments__title {
+    margin-bottom: 88px;
+}
+
+.apartaments {
+
+    // .apartaments__cards
+
+    &__cards {
+        transition-duration: 300ms;
+
+
+        &:hover{
+            transform: scale(1.050);
+        }
+    }
+}
+.apartaments__row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

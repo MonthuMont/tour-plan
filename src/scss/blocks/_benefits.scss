@@ -17,6 +17,12 @@
   // .benefits__item
 
   &__item {
+    transition-duration: 0.2s;
+
+
+    &:hover{
+      transform: scale(1.2);
+    }
   }
 
   // .benefits__item-img
