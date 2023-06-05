@@ -88,8 +88,11 @@
 .info--tel::before {
   background-image: url("./../img/header/Phone.svg");
 }
-.header__footer{
+.header__footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+.header-wrapper {
+  margin-bottom: 120px;
 }

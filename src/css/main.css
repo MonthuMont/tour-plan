@@ -66,19 +66,22 @@ body {
 }
 
 a {
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition: color 0.3s ease-in;
   -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 a:hover {
-  color: #D4C17F;
+  color: #d4c17f;
 }
 
 .container {
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.container_small {
+  max-width: 824px;
 }
 
 .text-right {
@@ -144,7 +147,7 @@ a:hover {
 
 .header-title {
   text-align: center;
-  color: #D4C17F;
+  color: #d4c17f;
   font-size: 48px;
   font-weight: bold;
   font-family: "Playfair Display", sans-serif;
@@ -191,4 +194,35 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+
+.header-wrapper {
+  margin-bottom: 120px;
+}
+
+.benefits__item-text {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+
+.benefits__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 70px;
+     -moz-column-gap: 70px;
+          column-gap: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.benefits__item-text {
+  padding-top: 51px;
+}
+
+.marginbtm {
+  margin-bottom: 120px;
 }
